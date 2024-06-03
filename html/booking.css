@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+    /* width: 100%;
+    height: 100vh;
+    position: relative; */
+}
+.head{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(76, 76, 247);
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    color: white;
+    padding: 10px;
+
+}
+.head_left{
+    font-size: x-large;
+    font-weight: bold;
+    
+ 
+}
+.head_right{
+    /* float: right; */
+    list-style-type: none;
+
+}
+.head_right > ul{
+    /* list-style-type: none; */
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    /* color: white; */
+    
+}
+.head_right > ul >li > a{
+    /* text-decoration: none; */
+    /* text-align: center; */
+    text-decoration: none;
+    color: white;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main > form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+form > input{
+    padding: 3px;
+}
+
+.btn{
+    width: 60px;
+    padding: 10px;
+    background-color: blue;
+    font-weight: bold;
+    border-radius: 10px;
+    color: white;
+    border: 1px solid black;
+}
+footer{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(76, 76, 247);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute;
+    bottom: 0; */
+    /* top: 0; */
+}
+.head_dummy{
+    display: none;
+    height: 60px;
+    width: 100%;
+}
+.ham{
+    display: none;
+}
+#ipbox{
+    display: none;
+}
+@media screen and (min-width:1440) {
+    
+}
+@media screen and (min-width:760px)  and (max-width:1024px) {
+    
+
+}
+@media screen and (max-width:759px) {
+    .head{
+        position: fixed;
+        top: 0px;
+    }
+    
+    .head_right > ul {
+        position: fixed;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        padding: 25px 0px 0px;
+        left: -200%;
+        /* left: 0; */
+        top: 45px;
+        width: 100%;
+        height: 50vh;
+        background-color: rgb(36, 40, 30);
+        transition: all 1s;
+    }
+    .head_dummy{
+        display: block;
+        
+    }
+    .ham{
+        display: unset;
+        position: fixed;
+        right: 10px;
+        top: 15px;
+    }
+    input:checked ~ .head_right > ul{
+        display: flex;
+        position: fixed;
+        left: 0;
+
+    }
+
+}

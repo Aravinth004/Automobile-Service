@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automob-Mechanic</title>
+    <link rel="stylesheet" href="./booking.css" type="text/css">
+</head>
+
+<body>
+
+   <div class="body">
+    <header class="head">
+        <div class="head_left">
+            <p>Automob-Mechanic</p>
+        </div>
+        <input type="checkbox" id="ipbox">
+        <label class="ham" for="ipbox"><div class="ham">🍔</div></label>
+        <div class="head_right">
+            <ul>
+                <li><a href="./index.html">Home </a></li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./service.html">Services</a></li>
+                <li><a href="./booking.html">Booking</a></li>
+                <li><a href="./report.html">Reports</a></li>
+                <li><a href="#">Logout</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">8144962219</a></li>
+            </ul>
+        </div>
+    </header>
+<div class="head_dummy"></div>
+
+    <main>
+        
+       <form action="#">
+        <h2>Book Your Service</h2>
+        <label for="name">Name:</label> 
+        <input type="text" id="name" placeholder="Aravinth">
+        <label for="email">Email Id:</label>
+        <input type="email" id="email" placeholder="abcd@gmail.com">
+        <label for="phone">Phone Number:</label>
+        <div>
+            <select name="phone" id="phone">
+                <option value="">code</option>
+                <option value="+91">+91</option>
+                <option value="+1">+1</option>
+                <option value="+99">+99</option>
+                <option value="+9">+9</option>
+
+            </select>
+            <input type="tel" maxlength="10" placeholder="8144962219">
+        </div>
+        <label for="service">Select Service: </label>
+        <select name="service" id="service">
+            <option value="">--select--</option>
+            <option value="Preventive Maintenance Service">Preventive Maintenance Service</option>
+            <option value="Body Repair Service">Body Repair Service</option>
+            <option value="Car Care Service">Car Care Service</option>
+        </select>
+        <label for="car_make">Car Make:</label>
+        <input list="car_makes" name="car_make" id="car_make">
+  <datalist id="car_makes">
+    <option value="Mahindra">
+    <option value="Maruti">
+    <option value="Honda">
+    <option value="Suzuki">
+    <!-- <option value="Safari"> -->
+  </datalist>
+        <label for="car_model">Car Model</label> 
+        <input type="text" placeholder="Alto, Innova,.....">
+
+        <label for="fuel">Fuel Type:</label>
+        <div >
+            <input name="fuels" type="radio" id="petrol"> 
+            <label for="petrol">Petrol </label>
+            <input name="fuels" type="radio" id="diesel"> 
+            <label for="diesel">Diesel </label>
+            <input name="fuels" type="radio" id="lpg"> 
+            <label for="lpg">LPG </label>
+            <input name="fuels" type="radio" id="others"> 
+            <label for="others">Others </label>
+        </div>
+        <label for="date">Appointment Date</label>
+        <input type="date" id="date">
+        <label for="address">Address</label>
+        <textarea name="address" id="address" cols="30" rows="5"></textarea>
+
+
+
+        <!-- <br> -->
+        <BUtton class="btn"> Book</BUtton>
+        <br>
+        
+       </form>
+    </main>
+
+    <footer>
+        <p>Copyright &#169; 2020 &nbsp; AutoMob-Mechanic. All Rights Reserved.</p>
+    </footer>
+   </div>
+
+
+   <script  src="./main.js" ></script>
+
+</body>
+
+</html>
